@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 15px 15px 15px 15px;
+  background: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/abstract-wallpaper-mountains-with-a-neon-glowing-circle-free-photo.jpeg?w=2210&quality=70)
+    no-repeat center center;
+  background-size: cover;
+}
+.wrapper {
+  width: 550px;
+  max-width: 100%;
+  height: auto;
+  max-height: 95vh;
+  overflow-y: auto;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 20px 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 70px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.fill_action {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+}
+.Box {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+.fname,
+.lname,
+.email,
+.password,
+.con_password,
+.gender,
+.hobbies,
+.income-source,
+.income-range,
+.age,
+.profile-pic {
+  flex: 1;
+}
+.fname input,
+.lname input,
+.email input,
+.password input,
+.con_password input,
+.age input,
+.income-source select {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.income-source select option {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.gender-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.gender-option input[type="radio"] {
+  accent-color: rgba(5, 29, 246, 0.7);
+}
+.hobbies-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.hobby-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hobby-option input[type="checkbox"] {
+  accent-color: rgba(255, 255, 255, 0.7);
+}
+.income-range-slider {
+  margin-top: 10px;
+  width: 100%;
+}
+.income-range-slider input {
+  width: 100%;
+}
+.income-display {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.bio textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 10px;
+  color: white;
+  resize: none;
+}
+textarea::placeholder {
+  color: white;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.submit-btn button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+.submit-btn button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Scrollbar styling */
+.wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 650px) {
+  .Box {
+    flex-direction: column;
+  }
+}

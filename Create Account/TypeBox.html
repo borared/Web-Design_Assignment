@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="stylebox.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Create Account</h1>
+      </div>
+      <div class="fill_action">
+        <div class="Box" id="boxName">
+          <div class="fname" alt="fill_name">
+            <label>First name*</label>
+            <input
+              type="text"
+              placeholder="Enter your first name"
+              alt="fname"
+            />
+          </div>
+          <div class="lname">
+            <label>Last name*</label>
+            <input type="text" placeholder="Enter your last name" alt="lname" />
+          </div>
+        </div>
+        <div class="Box" alt="fill_email">
+          <div class="email">
+            <label>Email*</label>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              alt="email"
+            />
+          </div>
+        </div>
+        <div class="Box">
+          <div class="password" alt="fill_password">
+            <label>Password*</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              alt="password"
+            />
+          </div>
+          <div class="con_password">
+            <label>Confirm Password*</label>
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              alt="confirm_password"
+            />
+          </div>
+        </div>
+
+        <div class="Box">
+          <div class="gender">
+            <label>Gender*</label>
+            <div class="gender-options">
+              <div class="gender-option">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </div>
+          <div class="hobbies">
+            <label>Hobbies*</label>
+            <div class="hobbies-options">
+              <div class="hobby-option">
+                <input
+                  type="checkbox"
+                  id="reading"
+                  name="hobbies"
+                  value="reading"
+                />
+                <label for="reading">Reading</label>
+              </div>
+              <div class="hobby-option">
+                <input
+                  type="checkbox"
+                  id="sports"
+                  name="hobbies"
+                  value="sports"
+                />
+                <label for="sports">Sports</label>
+              </div>
+              <div class="hobby-option">
+                <input
+                  type="checkbox"
+                  id="music"
+                  name="hobbies"
+                  value="music"
+                />
+                <label for="music">Music</label>
+              </div>
+              <div class="hobby-option">
+                <input
+                  type="checkbox"
+                  id="travel"
+                  name="hobbies"
+                  value="travel"
+                />
+                <label for="travel">Travel</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="age">
+            <label>Age*</label>
+            <input
+              type="number"
+              placeholder="Enter your age"
+              alt="age"
+              min="18"
+              max="100"
+            />
+          </div>
+        </div>
+        <div class="Box">
+          <div class="income-source">
+            <label>Source of Income*</label>
+            <select>
+              <option value="" disabled selected>
+                Select your income source
+              </option>
+              <option value="employment">Employment</option>
+              <option value="business">Business</option>
+              <option value="investments">Investments</option>
+              <option value="freelance">Freelance</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="income-range">
+            <label>Income Range*</label>
+            <div class="income-range-slider">
+              <input
+                type="range"
+                min="0"
+                max="100000"
+                step="1000"
+                value="30000"
+                class="slider"
+              />
+              <div class="income-display">
+                <span>$0</span>
+                <span>$50,000</span>
+                <span>$100,000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="bio" style="width: 100%">
+            <label>Bio</label>
+            <textarea placeholder="Tell us about yourself..."></textarea>
+          </div>
+        </div>
+        <div class="submit-btn">
+          <button type="submit">Create Account</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Income range slider value display
+      const slider = document.querySelector(".slider");
+      const updateSliderValue = () => {
+        const value = parseInt(slider.value);
+        const display = document.querySelector(".income-display");
+        display.innerHTML = `
+                <span>$0</span>
+                <span>$${value.toLocaleString()}</span>
+                <span>$100,000+</span>
+            `;
+      };
+
+      slider.addEventListener("input", updateSliderValue);
+      updateSliderValue(); // Initialize display
+    </script>
+  </body>
+</html>
