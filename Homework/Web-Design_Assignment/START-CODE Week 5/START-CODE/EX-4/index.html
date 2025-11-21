@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="Container">
+        <div class="sidebar">
+            <h1>Stark Digital</h1>
+            <div class="navbar">
+                <div class="dashBoard">
+                    <img src="./image/dashboard.png" alt="" style="width: 20px;">
+                    <h2 style="color: black;">Dashboard</h2>
+                </div>
+                <div class="section">
+                    <i class='bx bxs-book-content' ></i>
+                    <h2>My Course</h2>
+                </div>
+                <div class="section">
+                    <i class='bx bxs-message-dots'></i>
+                    <h2>Messages</h2>
+                </div>
+                <div class="section">
+                    <i class='bx bxs-bell' ></i>
+                    <h2>Notifications</h2>
+                </div>
+                <div class="section">
+                    <i class='bx bxs-calendar' ></i>
+                    <h2>Calendars</h2>
+                </div>
+                
+            </div>
+            <div id="more">
+                <p>see your <br> schedule</p>
+            </div>
+        </div>
+           
+        <div class="mainContent">
+            <div class="main1">
+                 <i class='bx bx-menu' id="menu" style="color: white; font-size: 35px;"></i>
+                <div style="display: flex; justify-content: space-between; gap: 15px; width: 100%;">
+                    <div style="display: flex;">
+                        <h1 >Welcome back Bora</h1>
+                        <img src="./image/wave.png" alt="" style="width: 50px; height: max-content; margin-top: 20px;
+                         display: flex; align-items: center;">
+                    </div>
+                     <div style="margin-top: 15px;">
+                    
+                        <div class="profileNSearch" id="profile1" >
+                            <input placeholder="Search Course">
+                            
+                            </input>
+                            <div class="profile" style="width: 50px;">
+                            
+                            </div>
+                        </div>
+                    
+                </div>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; margin-top: -20px;">
+                    <h3 style="font-weight: 500;">New Course</h3>
+                    <h4 style="font-weight: 100; text-decoration: underline; color: rgb(255, 255, 255);">View All</h4>
+                </div>
+                <div class="gridBox">
+                    <div class="box A">
+                        <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Content Writing</h3>
+                                <p class="lesson">12 Lessons</p>
+                            </div>
+                        </div>
+                        <div class="RateNType">
+                            <div class="Rating">
+                                Rating
+                                <div style="display: flex; gap: 10px; margin-top: -10px;">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.8</p>
+                                </div>
+                            </div>
+                            <div class="Type">
+                                Type
+                                <div style="margin-top: -10px;">
+                                    <p>Data Research</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="box B">
+                        <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-message-alt-add' style="background-color: antiquewhite;"></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Usability Testing</h3>
+                                <p class="lesson">15 Lessons</p>
+                            </div>
+                        </div>
+                        <div class="RateNType">
+                            <div class="Rating">
+                                Rating
+
+                                <div style="display: flex; gap: 10px; margin-top: -10px;">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>5.0</p>
+                                </div>
+                            </div>
+                            <div class="Type">
+                                Type
+                                <div style="margin-top: -10px;">
+                                    <p>UI/UX Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box C">
+                        <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-camera' style="background-color: rgb(149, 201, 244);"></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Photography</h3>
+                                <p class="lesson">8 Lessons</p>
+                            </div>
+                        </div>
+                        <div class="RateNType">
+                            <div class="Rating">
+                                Rating
+                                <div style="display: flex; gap: 10px; margin-top: -10px;">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.6</p>
+                                </div>
+                            </div>
+                            <div class="Type">
+                                Type
+                                <div style="margin-top: -10px;">
+                                    <p>Art and Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box D">
+                      <div class="boxHead">
+                        <h3 style="margin-top: -1px;">Hours Activity</h3>
+                      </div>
+                    
+                      <div class="hours-chart">
+                        <div class="bar aveColor" style="height: 60%;"></div>
+                        <div class="bar aveColor" style="height: 90%;"></div>
+                        <div class="bar aveColor" style="height: 35%;"></div>
+                        <div class="bar highlight" style="height: 100%;"></div>
+                        <div class="bar aveColor" style="height: 70%;"></div>
+                        <div class="bar aveColor" style="height: 20%;"></div>
+                        <div class="bar aveColor" style="height: 65%;"></div>
+                      </div>
+                      <div class="days">
+                        <span>Su</span>
+                        <span>Mo</span>
+                        <span>Tu</span>
+                        <span>We</span>
+                        <span>Th</span>
+                        <span>Fr</span>
+                        <span>Sa</span>
+                      </div>
+                    </div>
+
+                    <div class="box E">
+                        <div class="boxContent">
+                            <div>
+
+
+                            </div>
+                            <div class="boxHead">
+                                <h3>Daily Schedule</h3>
+                            
+                                <div class="boxSchedule">
+                                     
+                                        <i class='bx bxs-grid-alt iconSchedule' style="background-color: rgb(234, 210, 225);"></i>
+                                     
+                                     <div class="boxHead" style="flex-grow: 2;">
+                                         <h3>Design System</h3>
+                                         <p class="lesson">Lecture-class</p>
+                                     </div>
+                                     <div>
+                                        <i class='bx bx-chevron-right' style="background-color: rgb(232, 229, 229); width: 30px;
+                                         height: 30px;"></i>
+                                    </div>
+                                </div>
+                                <div class="boxSchedule">
+                                     
+                                        <i class='bx bxs-palette iconSchedule' style="background-color: rgb(185, 185, 250);"></i>
+                                     
+                                     <div class="boxHead" style="flex-grow: 2;">
+                                         <h3>Color Style</h3>
+                                         <p class="lesson">Group-Test</p>
+                                     </div>
+                                     <div>
+                                        <i class='bx bx-chevron-right' style="background-color: rgb(232, 229, 229); width: 30px;
+                                         height: 30px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h3 style="font-weight: 500; margin-top: 37px;">Course You're training</h3>
+                        <i class='bx bxs-alarm-add' style="font-size: 25px; margin-top: 45px; color: rgb(64, 173, 5);"></i>
+                    </div>
+                    <div class="gridBox2">
+                        
+                        <div class="box F" style="margin-top: -10px;">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-grid-alt' style="background-color: rgb(149, 201, 244);"></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>3D Design Course</h3>
+                                <p class="lesson">Red Bora</p>
+                            </div>
+
+                            
+                            </div>
+                            <div class="boxHead">
+                                <h3>Remaining</h3>
+                                <p class="lesson">8h 45min</p>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Processing</h3>
+                                <p class="lesson">75%</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    
+                         <div class="responsiveMain2">
+                
+                <div class="info" style="padding: 15px;">
+                    <div>
+                        <h3>Stark Digital</h3>
+                        <h1>Go Premium</h1>
+                        <p>Explore 25k courses with <br> membership</p>
+                        <button style="width: 150px; height: 35px; border-radius: 20px; 
+                        background-color: yellow; border: none;">Get Access</button>
+                    </div>
+                </div>
+                <div class="assignment">
+                    <div style="display: flex; justify-content: space-between;">
+                        <h2 style="font-weight: 500; margin-top: 30px; color: white;">Assignments</h2>
+                        <i class='bx bxs-alarm-add' style="font-size: 25px; margin-top: 40px; color: rgb(64, 173, 5);"></i>
+                    </div>
+                    <div class="Asgwrapper">
+                        <div class="asgbox">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Methods of data</h3>
+                                <p class="lesson" style="color: green">completed</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="asgbox">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Market Research</h3>
+                                <p class="lesson" style="color: blue">in progress</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="asgbox">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Data Collection</h3>
+                                <p class="lesson" style="color: red">Upcomming</p>
+                            </div>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+                    
+                </div>
+            </div>
+            <div class="main2">
+                <div class="profileNSearch">
+                    <input placeholder="Search Course">
+                        
+                    </input>
+                    <div class="profile">
+                        
+                    </div>
+                </div>
+                <div class="info">
+                    <div>
+                        <h3>Stark Digital</h3>
+                        <h1>Go Premium</h1>
+                        <p>Explore 25k courses with <br> membership</p>
+                        <button style="width: 150px; height: 35px; border-radius: 20px; 
+                        background-color: yellow; border: none; ">Get Access</button>
+                    </div>
+                </div>
+                <div class="assignment">
+                    <div style="display: flex; justify-content: space-between;">
+                        <h2 style="font-weight: 500; margin-top: 40px; color: white;">Assignments</h2>
+                        <i class='bx bxs-alarm-add' style="font-size: 25px; margin-top: 40px; color: rgb(64, 173, 5);"></i>
+                    </div>
+                    <div class="Asgwrapper">
+                        <div class="asgbox">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Methods of data</h3>
+                                <p class="lesson" style="color: green">completed</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="asgbox">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Market Research</h3>
+                                <p class="lesson" style="color: blue">in progress</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="asgbox">
+                            <div class="boxContent">
+                            <div>
+                                <i class='bx bxs-book-reader'></i>
+                            </div>
+                            <div class="boxHead">
+                                <h3>Data Collection</h3>
+                                <p class="lesson" style="color: red">Upcomming</p>
+                            </div>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

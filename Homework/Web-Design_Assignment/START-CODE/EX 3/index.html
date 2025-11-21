@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: url(bg.jpg) repeat center;
+        background-size: cover;
+      }
+      .pricing-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .pricing-plan {
+        background-color: blue;
+        width: 300px;
+        height: 480px;
+        border-radius: 25px;
+        flex: 1;
+        transition: flex 0.3s ease;
+      }
+
+      .pricing-plan:hover {
+        flex: 1.5;
+      }
+      .plan-title,
+      .plan-price {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .header-tittle {
+        background-color: lightgray;
+        padding: 10px;
+        padding-top: 20px;
+        border-radius: 25px 25px 0 0;
+      }
+
+      li {
+        margin-top: 45px;
+      }
+      button {
+        margin-top: 40px;
+        padding: 10px 20px;
+        border: none;
+        background-color: rgb(5, 5, 245);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        justify-self: center;
+        transition: all 0.3s ease-in-out;
+        border-radius: 15px;
+        margin-top: 40px;
+      }
+      button:hover {
+        background-color: navy;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        margin-right: 30px;
+        padding-right: 15px;
+        margin-top: 50px;
+        font-size: 20px;
+      }
+      .darker-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 950px) {
+        .pricing-container {
+          flex-direction: column;
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+        .pricing-plan {
+          min-height: 500px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan" style="background-color: rgb(255, 255, 255)">
+        <div class="header-tittle">
+          <div class="plan-title">Basic</div>
+          <div class="plan-price">$9.99/month</div>
+        </div>
+
+        <ul class="plan-features">
+          <li>10GB Storage</li>
+          <hr />
+          <li>1 User</li>
+          <hr />
+          <li>Non-Support</li>
+          <hr />
+        </ul>
+        <div class="button-container">
+          <button class="plan-button">Get this plan</button>
+        </div>
+      </div>
+      <div class="pricing-plan" style="color: white">
+        <div class="header-tittle" style="background-color: rgb(21, 21, 229)">
+          <div class="plan-title">Standard</div>
+          <div class="plan-price">$19.99/month</div>
+        </div>
+        <ul class="plan-features">
+          <li>50GB Storage</li>
+          <hr />
+          <li>5 Users</li>
+          <hr />
+          <li>Phone &amp; Email Support</li>
+          <hr />
+        </ul>
+        <div class="button-container">
+          <button
+            class="plan-button"
+            style="background-color: white; color: black"
+          >
+            Get this plan
+          </button>
+        </div>
+      </div>
+      <div
+        class="pricing-plan"
+        style="background-color: rgb(13, 13, 144); color: white"
+      >
+        <div
+          class="header-tittle"
+          style="background-color: rgb(5, 5, 112); color: white"
+        >
+          <div class="plan-title">Premium</div>
+          <div class="plan-price">$49.99/month</div>
+        </div>
+        <ul class="plan-features">
+          <li>100GB Storage</li>
+          <hr />
+          <li>10 Users</li>
+          <hr />
+          <li>24/7 Support</li>
+          <hr />
+        </ul>
+        <div class="button-container">
+          <button class="plan-button" style="background-color: blue">
+            Get this plan
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="darker-bg"></div>
+  </body>
+</html>
