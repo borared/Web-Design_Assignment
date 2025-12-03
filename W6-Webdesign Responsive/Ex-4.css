@@ -1,0 +1,31 @@
+.wrapper {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.small {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #ff9999;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.big {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .small {
+    display: none;
+  }
+  .big {
+    display: inline-block;
+    padding: 20px 30px;
+    background: #a3e635;
+    color: #000;
+    font-size: 40px;
+    border-radius: 5px;
+  }
+}
