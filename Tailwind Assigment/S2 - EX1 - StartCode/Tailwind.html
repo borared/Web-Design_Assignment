@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>StudyHub — Simple Version</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 p-6">
+
+    <div class="max-w-5xl mx-auto">
+
+        <header class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                    SH
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">StudyHub</h1>
+                    <p class="text-sm text-gray-500">Learn together • Build faster</p>
+                </div>
+            </div>
+
+            <nav class="flex items-center gap-4 text-sm font-semibold">
+                <a href="#" class="text-gray-500 hover:text-black">Courses</a>
+                <a href="#" class="text-gray-500 hover:text-black">Resources</a>
+                <a href="#" class="text-gray-500 hover:text-black">Community</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Get Started</a>
+            </nav>
+        </header>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            
+            <div class="lg:col-span-2 bg-white p-8 rounded-xl shadow-md">
+                <h2 class="text-3xl font-bold mb-4">Your weekly learning playground</h2>
+                <p class="text-gray-500 mb-6">Curated bite-sized courses, hands-on projects, and community challenges to keep you learning consistently.</p>
+                
+                <div class="flex gap-4 mb-6">
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">Explore Courses</button>
+                    <button class="border-2 border-gray-200 text-blue-600 px-6 py-3 rounded-lg font-bold hover:border-blue-300">Join Community</button>
+                </div>
+
+                <div class="border-t border-gray-100 my-6"></div>
+
+                <div class="flex gap-8">
+                    <div>
+                        <p class="text-xs text-gray-500 uppercase font-bold">Next live workshop</p>
+                        <p class="font-bold">Stateful APIs • Dec 15</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 uppercase font-bold">Active learners</p>
+                        <p class="font-bold">3,412</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-md flex flex-col justify-center">
+                <h3 class="text-lg font-bold mb-2">Start your free plan</h3>
+                <p class="text-sm text-gray-500 mb-4">No credit card required.</p>
+                <form class="flex flex-col gap-3">
+                    <input type="text" placeholder="Full name" class="border border-gray-300 p-3 rounded-lg w-full" />
+                    <input type="email" placeholder="Email address" class="border border-gray-300 p-3 rounded-lg w-full" />
+                    <button class="bg-blue-600 text-white font-bold p-3 rounded-lg w-full hover:bg-blue-700">Create account</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                <div class="w-12 h-12 bg-blue-100 text-blue-800 rounded-lg flex items-center justify-center font-bold">PG</div>
+                <div>
+                    <h3 class="font-bold">Project Guided</h3>
+                    <p class="text-sm text-gray-500">Short projects with guided steps.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-100 text-orange-800 rounded-lg flex items-center justify-center font-bold">LR</div>
+                <div>
+                    <h3 class="font-bold">Learning Roadmaps</h3>
+                    <p class="text-sm text-gray-500">Structured paths to job-ready levels.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 text-green-800 rounded-lg flex items-center justify-center font-bold">CM</div>
+                <div>
+                    <h3 class="font-bold">Community Mentors</h3>
+                    <p class="text-sm text-gray-500">Peer feedback to accelerate growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white p-3 rounded-xl shadow-sm cursor-pointer hover:shadow-md">
+                <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=400&q=80" class="w-full h-24 object-cover rounded-lg mb-2" alt="img">
+                <h4 class="font-bold text-sm">Daily coding habit</h4>
+                <p class="text-xs text-gray-500">10 min • Beginner</p>
+            </div>
+            
+            <div class="bg-white p-3 rounded-xl shadow-sm cursor-pointer hover:shadow-md">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=400&q=80" class="w-full h-24 object-cover rounded-lg mb-2" alt="img">
+                <h4 class="font-bold text-sm">Deploy Node.js app</h4>
+                <p class="text-xs text-gray-500">30 min • Intermediate</p>
+            </div>
+
+            <div class="bg-white p-3 rounded-xl shadow-sm cursor-pointer hover:shadow-md">
+                <img src="https://images.unsplash.com/photo-1515165562835-c6c8f2d0d6f9?auto=format&fit=crop&w=400&q=80" class="w-full h-24 object-cover rounded-lg mb-2" alt="img">
+                <h4 class="font-bold text-sm">System design</h4>
+                <p class="text-xs text-gray-500">45 min • Intermediate</p>
+            </div>
+
+            <div class="bg-white p-3 rounded-xl shadow-sm cursor-pointer hover:shadow-md">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80" class="w-full h-24 object-cover rounded-lg mb-2" alt="img">
+                <h4 class="font-bold text-sm">Open source work</h4>
+                <p class="text-xs text-gray-500">25 min • All levels</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            
+            <div class="lg:col-span-2">
+                <div class="bg-white p-6 rounded-xl shadow-md mb-6">
+                    <h3 class="font-bold text-lg mb-4">Your active courses</h3>
+                    
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="font-bold">Fullstack Basics</p>
+                            <p class="text-xs text-gray-500">Module 3 of 8</p>
+                        </div>
+                        <div class="w-32">
+                            <p class="text-xs text-right text-gray-500 mb-1">75%</p>
+                            <div class="h-2 bg-gray-100 rounded-full">
+                                <div class="h-full bg-blue-600 rounded-full w-3/4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-bold">Intro to Databases</p>
+                            <p class="text-xs text-gray-500">Module 1 of 5</p>
+                        </div>
+                        <div class="w-32">
+                            <p class="text-xs text-right text-gray-500 mb-1">30%</p>
+                            <div class="h-2 bg-gray-100 rounded-full">
+                                <div class="h-full bg-green-500 rounded-full w-1/3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-lg mb-4">Community Challenges</h3>
+                    <div class="flex flex-col gap-4">
+                        <div class="border border-gray-100 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <p class="font-bold text-sm">30-day JS challenge</p>
+                                <p class="text-xs text-gray-500">120 people active</p>
+                            </div>
+                            <button class="border border-gray-300 text-blue-600 text-xs font-bold px-3 py-1 rounded hover:bg-gray-50">Join</button>
+                        </div>
+                        <div class="border border-gray-100 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <p class="font-bold text-sm">Weekly Algo Sprint</p>
+                                <p class="text-xs text-gray-500">Sat • 10:00 AM</p>
+                            </div>
+                            <button class="border border-gray-300 text-blue-600 text-xs font-bold px-3 py-1 rounded hover:bg-gray-50">RSVP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="bg-white p-6 rounded-xl shadow-md h-full flex flex-col gap-6">
+                
+                <div>
+                    <h4 class="font-bold mb-2">Learning streak</h4>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <p class="text-xs text-gray-500">This week</p>
+                            <p class="font-bold">4 days</p>
+                        </div>
+                        <div class="flex-1 h-3 bg-gray-100 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full w-2/3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-100"></div>
+
+                <div>
+                    <h4 class="font-bold mb-1">Recommended topic</h4>
+                    <p class="font-bold text-blue-600">APIs with Express</p>
+                    <p class="text-xs text-gray-500 mt-2">Build and deploy a REST API in under an hour.</p>
+                </div>
+
+                <div class="mt-auto pt-4 border-t border-gray-100">
+                    <h4 class="font-bold mb-1">Account</h4>
+                    <p class="text-xs text-gray-500 mb-3">student@example.com</p>
+                    <button class="w-full border border-gray-300 text-gray-600 font-bold py-2 rounded hover:bg-gray-50">Manage plan</button>
+                </div>
+            </aside>
+        </section>
+
+        <footer class="flex flex-col md:flex-row justify-between items-center border-t border-gray-200 py-8 gap-4">
+            <div>
+                <p class="font-bold">StudyHub</p>
+                <p class="text-xs text-gray-500">Learn together • Build faster</p>
+            </div>
+            <div class="flex gap-4 text-sm text-gray-500">
+                <a href="#" class="hover:text-black">Terms</a>
+                <a href="#" class="hover:text-black">Privacy</a>
+                <a href="#" class="hover:text-black">Support</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

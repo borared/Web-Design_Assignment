@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basis Theory Clone</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            screens: {
+              "xl-custom": "1100px",
+              "lg-custom": "900px",
+              "md-custom": "600px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-white text-gray-900">
+    <header
+      class="top-banner bg-blue-500 p-2 text-sm border-b border-gray-300 text-center"
+    >
+      Basis Theory Raises $35M to Power Agentic Commerce and the Next Era of
+      Merchant Payments.
+    </header>
+
+    <nav
+      class="navbar flex justify-between items-center py-5 px-5 lg:px-12 transition-all duration-300 ease-in-out hover:bg-gray-50 hover:shadow-xl"
+    >
+      <div class="nav-left flex items-center gap-6">
+        <img
+          src="https://dummyimage.com/40x40/000/fff.png&text=B"
+          class="logo w-10 h-10"
+        />
+        <ul class="list-none hidden lg-custom:flex gap-6">
+          <li
+            class="cursor-pointer text-[15px] font-medium hover:text-gray-700"
+          >
+            Use Cases
+          </li>
+          <li
+            class="cursor-pointer text-[15px] font-medium hover:text-gray-700"
+          >
+            Solutions
+          </li>
+          <li
+            class="cursor-pointer text-[15px] font-medium hover:text-gray-700"
+          >
+            Why Basis Theory
+          </li>
+          <li
+            class="cursor-pointer text-[15px] font-medium hover:text-gray-700"
+          >
+            Pricing
+          </li>
+          <li
+            class="cursor-pointer text-[15px] font-medium hover:text-gray-700"
+          >
+            Blog
+          </li>
+          <li
+            class="cursor-pointer text-[15px] font-medium hover:text-gray-700"
+          >
+            Docs
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button
+          class="login py-2 px-5 border border-black ml-2 cursor-pointer rounded-xl text-sm font-semibold bg-transparent hover:bg-gray-100 transition-colors"
+        >
+          Login
+        </button>
+        <button
+          class="demo py-2 px-5 border-none ml-2 cursor-pointer rounded-xl text-sm font-semibold bg-black text-white hover:bg-gray-800 transition-colors"
+        >
+          Get a demo
+        </button>
+      </div>
+    </nav>
+    <section
+      class="hero flex flex-col lg-custom:flex-row items-center justify-between py-16 px-5 lg:px-12 gap-10 lg:gap-10"
+    >
+      <div
+        class="hero-text max-w-full lg-custom:max-w-[50%] lg-custom:text-left text-center"
+      >
+        <h1
+          class="text-5xl md-custom:text-[38px] xl-custom:text-6xl font-bold mb-5"
+        >
+          Built to keep<br />customers transacting
+        </h1>
+        <p
+          class="text-lg md-custom:text-base mb-6 leading-relaxed text-gray-600"
+        >
+          More than a token vault—Basis Theory routes, tokenizes, and optimizes
+          your payments to drive conversion, resilience, and retention.
+        </p>
+
+        <div class="flex mb-8">
+          <span
+            class="flex items-center mb-3 mr-3 bg-gray-100 py-1.5 px-3.5 rounded-full text-sm font-medium gap-2"
+          >
+            <i class='bxr  bx-chart-network'></i> Boost
+            authorization rates</span
+          >
+          <span
+            class="flex items-center mb-3 mr-3 bg-gray-100 py-1.5 px-3.5 rounded-full text-sm font-medium gap-2"
+          >
+            <i class='bxr  bx-chart-network'></i> Reduce
+            churn</span
+          >
+          <span
+            class="inline-flex items-center mb-3 mr-3 bg-gray-100 py-1.5 px-3.5 rounded-full text-sm font-medium gap-2"
+          >
+            <i class='bxr  bx-chart-network'></i> Route to any
+            PSP</span
+          >
+        </div>
+
+        <div class="hero-buttons">
+          <button
+            class="btn-primary py-3.5 px-6 rounded-xl border-none cursor-pointer mr-2.5 text-base font-semibold transition-all duration-250 ease-in-out bg-blue-500 text-white hover:bg-blue-400 hover:-translate-y-1 hover:shadow-[0_8px_18px_rgba(0,184,148,0.4)]"
+          >
+            Request a demo
+          </button>
+          <button
+            class="btn-secondary py-3.5 px-6 rounded-xl border border-black cursor-pointer text-base font-semibold transition-all duration-250 ease-in-out bg-white text-gray-900 hover:bg-gray-50 hover:-translate-y-1 hover:shadow-lg"
+          >
+            Start implementing
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <dotlottie-wc
+          src="https://lottie.host/a9f6ef9d-7e5e-4643-8d31-facadcdb896e/wIRX36gVXu.lottie"
+          style="width: 500px; height: 400px;"
+          autoplay
+          loop
+        ></dotlottie-wc>
+      </div>
+    </section>
+    <section class="brands text-center py-12 bg-black text-white">
+      <p class="text-base">
+        Innovative merchants work with the Basis Theory Payment Vault
+      </p>
+      <div
+        class="brand-logos mt-4 flex justify-center flex-wrap md-custom:flex-wrap gap-14 md-custom:gap-6 text-xl opacity-90"
+      >
+        <i class="fab fa-pinterest text-3xl"></i>
+        <i class="fas fa-building text-3xl"></i>
+        <i class="fas fa-university text-3xl"></i>
+        <i class="fab fa-paypal text-3xl"></i>
+        <i class="fa-brands fa-cc-visa text-3xl"></i>
+        <i class="fa-brands fa-cc-mastercard text-3xl"></i>
+        <i class="fa-brands fa-cc-amex text-3xl"></i>
+        <i class="fa-brands fa-cc-discover text-3xl"></i>
+        <i class="fa-brands fa-apple-pay text-3xl"></i>
+        <i class="fa-brands fa-google-pay text-3xl"></i>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          document.body.style.transition = "opacity 1s";
+          document.body.style.opacity = 1;
+        }, 100);
+      });
+    </script>
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+  </body>
+</html>
